@@ -8,16 +8,19 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+  When I first ran the game, I tried to submit my guess for a number and the hint was wrong. The message for the hint kept telling me to guess a lower number, when the actual number in the Developer Debug Info was a higher number and vice versa. I've also noticed that after using up all my attempts or starting a new game that the submit button doesn't work, when you are guessing a new number. 
+
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
-
+| Input | Expected Behavior                    | Actual Behavior                   | Console Output / Error |
+|-------|--------------------------------------|-----------------------------------|------------------------|
+ 70     message supposed to say to go lower     message suppose to say go higher       app.py, check_guess
+   40     message suppposed to say to go higher  message suppose to say to go lower     app.py, check_guess
+   52     after winning game and starting      submit button doesn't submit guessed    app.py, update_score
+          a new game, submit button submits    number after winning and starting a 
+          the guessed number                   a new game
 ---
 
 ## 2. How did you use AI as a teammate?
